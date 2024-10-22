@@ -1,2 +1,2 @@
 # Mathematics
-Various solutions from different math subjects
+A collection of code for solving problems for different math areas.
