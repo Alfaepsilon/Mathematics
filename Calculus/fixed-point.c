@@ -1,3 +1,4 @@
+//https://numericalmethodstutorials.readthedocs.io/en/latest/fixed.html
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
