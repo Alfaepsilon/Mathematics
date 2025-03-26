@@ -1,14 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <crypto.h>
 
-int main() {
+int gcd() {
 	int a;
 	int b;
 	printf("Type a number: \n");
-	scanf_s("%d", &a);
+	scanf("%d", &a);
 	printf("Type another number: \n");
-	scanf_s("%d", &b);
+	scanf("%d", &b);
 	while (a != b) {
 		if (a > b) {
 			a = a - b;
