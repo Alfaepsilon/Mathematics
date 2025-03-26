@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <crypto.h>
 
-int main() {
-
+int fastpoweralgo_lowmem() {
 	int N, g, A = 0;
 	printf("Type modulo: ");
-	scanf_s("%d", &N);
+	scanf("%d", &N);
 	printf("Type base: ");
-	scanf_s("%d", &g);
+	scanf("%d", &g);
 	printf("Type exponent: ");
-	scanf_s("%d", &A);
+	scanf("%d", &A);
 	int a = g;
 	int b = 1;
 	while (A > 0) {
