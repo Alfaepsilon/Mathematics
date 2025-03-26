@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <crypto.h>
 
-int main() {
+int exeucalgo() {
 	int a;
 	int b;
 	int u = 1;
@@ -11,10 +12,10 @@ int main() {
 	int t;
 	int q;
 	printf("Type a number: \n");
-	scanf_s("%d", &a);
+	scanf("%d", &a);
 	int g = a;
 	printf("Type another number: \n");
-	scanf_s("%d", &b);
+	scanf("%d", &b);
 	if (b == 0) {
 		printf("%d, %d, %d", g, u, 0);
 		return 0;
