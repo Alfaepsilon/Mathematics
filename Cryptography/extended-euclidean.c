@@ -1,21 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include <crypto.h>
+#include "crypto.h"
 
-int exeucalgo() {
-	int a;
-	int b;
+int exeucalgo(int a, int b, int inverse) {
 	int u = 1;
 	int x = 0;
 	int s;
 	int t;
 	int q;
-	printf("Type a number: \n");
-	scanf("%d", &a);
 	int g = a;
-	printf("Type another number: \n");
-	scanf("%d", &b);
 	if (b == 0) {
 		printf("%d, %d, %d", g, u, 0);
 		return 0;
@@ -34,6 +28,9 @@ int exeucalgo() {
 	while (u < 0) {
 		u = u + b/g;
 		v = v - a/g;
+	}
+	if(inverse = 1){
+		return u;
 	}
 	printf("%d, %d, %d",  g, u, v);
 	return 0;
