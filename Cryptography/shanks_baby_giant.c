@@ -3,7 +3,7 @@
 #include <math.h>
 #include "crypto.h"
 
-unsigned long long main(unsigned long long val, unsigned long long p, unsigned long long g) {
+unsigned long long shanks(unsigned long long val, unsigned long long p, unsigned long long g) {
 	unsigned long long inverse = exeucalgo(g, p, 1);
 	unsigned long long N = DLP(1, p, g);
 	unsigned long long n = 1 + floor(sqrt(N));
