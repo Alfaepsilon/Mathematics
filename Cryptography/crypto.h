@@ -1,7 +1,7 @@
-int primitive_roots(int);
-int exeucalgo();
+int primitive_roots();
+unsigned long long exeucalgo();
 int gcd();
 int shift_cipher();
-int fastpoweralgo_lowmem(int, int, int);
-int DLP();
-int shanks();
+unsigned long long fastpoweralgo_lowmem();
+unsigned long long DLP();
+unsigned long long shanks();
