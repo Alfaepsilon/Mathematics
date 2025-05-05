@@ -3,9 +3,9 @@
 #include <math.h>
 #include "crypto.h"
 
-int fastpoweralgo_lowmem(int modulo, int base, int exponent) {
-	int a = base;
-	int b = 1;
+unsigned long long fastpoweralgo_lowmem(unsigned long long modulo, unsigned long long base, unsigned long long exponent) {
+	unsigned long long a = base;
+	unsigned long long b = 1;
 	while (exponent > 0) {
 		if (exponent % 2 == 1) {
 			b = (b * a) % modulo;
