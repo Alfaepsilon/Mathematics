@@ -8,4 +8,5 @@ def order(g, p):
         while fastpoweralgo_lowmem(modulo, g, p // factor) == 1:
             p = p // factor
     order = p
+    print(order)
     return order

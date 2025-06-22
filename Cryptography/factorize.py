@@ -1,8 +1,9 @@
-from math import sqrt, floor
+from math import floor
+import gmpy2
 def factorize(p):
     factors = []
     i = 2
-    while i < floor(sqrt(p)):
+    while i < floor(gmpy2.sqrt(p)):
         if p % i == 0:
             factors.append(i)
         while(p % i == 0):
